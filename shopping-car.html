@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=pin_dropsmartphonemailmailforum" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+  </head>
+  <body class="back-positiv">
+  <main>  
+
+      <header class="flex">
+        <div class="logo">
+          <a href="index.html" class="logo" >
+            <img src="web/logoMB45.png" alt="logo MB45">
+          </a>
+        </div>
+        <nav class="main-menu flex">
+          <a href="fornitures.html" class="nav-item ">FURNITURES</a>
+          <a href="contact.html" class="nav-item">CONTACT</a>
+          <a href="shopping-car.html" class="nav-item nav-item-selected">SHOPPING LIST</a>
+        </nav>
+        <nav class="right-menu flex">
+          <a href="#" title="User Profile"><img src="web/i-user.png" alt="User Profile" class="icon-main-menu" ></a>
+          <a href="shopping-car.html" title="Shopping Car"><img src="web/i-car.png" alt="Shopping Car" class="icon-main-menu"></a>
+          <a href="contact.html" title="Contact"><img src="web/i-contact.png" alt="Contact" class="icon-main-menu"></a>
+        </nav>
+      </header>
+      
+      <content class="grid-2-col">
+        <section class="products-car">
+          <h3>Shopping Cart</h3> 
+
+          <table border="0" class="product-table">
+            <tr>
+              <th class="font-blue" colspan="2">Item</th>
+              <th class="font-blue" colspan="2">Order</th>
+            </tr>
+            <tr>
+              <td style="background-color: transparent;"></td>
+              <td style="background-color: transparent;">Item</td>
+              <td style="background-color: transparent;">Quantity</td>
+              <td style="background-color: transparent;">Description</td>
+            </tr>
+            <tr>
+              <td class="text-center" ><img src="web/furniture1.png"></td>
+              <td>Melodic Nest</td>
+              <td>1</td>
+              <td>€800</td>
+            </tr>
+            <tr>
+              <td  class="text-center" ><img src="web/furniture2.png"></td>
+              <td>Melodic Colors</td>
+              <td>1</td>
+              <td>€900</td>
+            </tr>
+            <tr>
+              <td style="background-color: transparent;"></td>
+              <td style="background-color: transparent;"></td>
+              <td class="td-products-list">Total</td>
+              <td class="td-products-list">€1700</td>
+            </tr>
+          </table>
+        </section>
+
+        <section class="payment-form ">
+          <h3>Payment Information</h3>
+          <div class=" grid-2-col-form">
+            <input type="text" id="Name" name="Name" placeholder="Name">
+            <input type="text" id="Surname" name="Surname" placeholder="Surname">
+            <input type="email" id="Email" name="Email" placeholder="Email">
+            <input type="text" id="Address" name="Address" placeholder="Address">
+            <input type="tel" id="Mobile Phone" name="Mobile Phone" placeholder="Mobile Phone">
+            <select id="Country" name="Country" placeholder="Country">
+              <option value="us">United States</option>
+              <option value="uk">United Kingdom</option>
+              <option value="ca">Canada</option>
+              <option value="de">Germany</option>
+              <option value="fr">France</option>
+              <option value="es">Spain</option>
+              <option value="it">Italy</option>
+              <option value="in">India</option>
+              <option value="cn">China</option>
+              <option value="jp">Japan</option>
+            </select>
+          </div>
+          <div class="flex space-bet align-items-center ">
+                <p >Payment Method</p>
+              
+                <label >
+                  <input type="radio" name="opcion" value="Paypal"> Paypal
+                </label>
+                <label >
+                  <input type="radio" name="opcion" value="Credit Card"> Credit Card
+                </label>
+          </div>
+          <div class="flex ">
+            <p>I accept terms and conditions*</p>
+            <input type="checkbox" id="acepto" name="terminos" checked>
+          </div>
+          <a href="#" class="button-1 bt-orange margin-b">NEXT</a>
+        </section>
+        <section class="span2">
+          <ul class="terms" >
+            <strong>* Terms and Conditions</strong> 
+            <li><strong>Product Availability</strong> – All items are subject to availability. We reserve the right to modify or discontinue products without prior notice.</li>
+            <li><strong>Orders & Payments</strong> – Orders are confirmed upon full or partial payment. Prices are subject to change without notice.</li>
+            <li><strong>Shipping & Delivery</strong> – Estimated delivery times are provided but may vary due to unforeseen circumstances. Customers are responsible for accurate shipping details.</li>
+            <li><strong>Returns & Refunds</strong> – Returns are accepted within 20 days of delivery if the item is unused and in its original packaging. Custom-made items are non-refundable.</li>
+            <li><strong>Warranty & Liability</strong> – Our products come with a 1 year warranty against manufacturing defects. We are not liable for damage caused by misuse or improper installation.</li>
+          </ul>
+        </section>
+
+      </content>
+      <footer class="flex">
+        <div class="logo-footer">
+          <img src="web/logoMB45-s-n.png">
+        </div>
+        <div class="copy font-white">All rights reserved</div>
+        <div class="icons-social-footer">
+          <a href="#" title="Instagram"><img alt="Instagram" src="web/i-soc-instagram-n.png"></a>
+          <a href="#" title="Pinterest"><img alt="Pinterest" src="web/i-soc-pinterest-n.png"></a>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
